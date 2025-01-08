@@ -17,6 +17,38 @@ project:
 
 If your product also use `pedestal` you should use the `0.5.7` version.
 
+## GraalVM Native Image Generation
+
+You should use `"-H:ReflectionConfigurationFiles=reflect-config.json"` with the following as content to
+`reflect-config.json` file:
+
+```json 
+[
+  {
+    "name": "java.nio.HeapByteBuffer[]",
+    "unsafeAllocated": true
+  }
+]
+```
+
+You should also use `"-H:ConfigurationFileDirectories=graalvm-resources"` and inside the `graalvm-resources` folder you
+should have a `resource-config.json` file with the following content:
+
+```json
+{
+  "resources": {
+    "includes": [
+      {
+        "pattern": "cognitect/aws/.+\\.edn"
+      },
+      {
+        "pattern" : "cognitect_aws_http.edn"
+      }
+    ]
+  }
+}
+```
+
 ## License
 
 Copyright © 2024 Bruno do Nascimento Maciel
