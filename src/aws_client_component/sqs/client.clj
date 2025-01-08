@@ -5,6 +5,8 @@
             [cognitect.aws.http.cognitect :as aws.http]
             [integrant.core :as ig]))
 
+;TODO: Maybe we should add the namespaces that are required dynamically.
+
 (defmethod ig/init-key ::aws-sqs-client
   [_ {:keys [components]}]
   (log/info :starting ::aws-sqs-client)
