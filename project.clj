@@ -1,4 +1,4 @@
-(defproject net.clojars.macielti/aws-client-component "1.1.0"
+(defproject net.clojars.macielti/aws-client-component "1.1.1"
 
   :description "AWS Client Integrant component"
 
@@ -9,11 +9,11 @@
 
   :dependencies [[org.clojure/clojure "1.12.0"]
                  [integrant "0.13.1"]
-                 [com.cognitect.aws/api "0.8.692"]
-                 [com.cognitect.aws/endpoints "1.1.12.772"]
-                 [com.cognitect.aws/sqs "871.2.29.35"]
-                 [net.clojars.macielti/common-clj "41.74.74-2"]
-                 [io.pedestal/pedestal.interceptor "0.5.7"]
+                 [com.cognitect.aws/api "0.8.692"]          ;; Do not update this dependency version before making sure that it is compatible with GraalVM
+                 [com.cognitect.aws/endpoints "1.1.12.772"] ;; Do not update this dependency version before making sure that it is compatible with GraalVM
+                 [com.cognitect.aws/sqs "871.2.29.35"]      ;; Do not update this dependency version before making sure that it is compatible with GraalVM
+                 [net.clojars.macielti/common-clj "42.74.74"]
+                 [io.pedestal/pedestal.interceptor "0.5.7"] ;; Do not update this dependency version before making sure that it is compatible with GraalVM
                  [org.clojure/tools.reader "1.5.0"]
                  [com.taoensso/timbre "6.6.1"]
                  [overtone/at-at "1.4.65"]]
