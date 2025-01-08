@@ -1,3 +1,6 @@
+[![Clojars Project](https://img.shields.io/clojars/v/net.clojars.macielti/aws-client-component.svg)](https://clojars.org/net.clojars.macielti/aws-client-component)
+![Compatible with GraalVM](https://img.shields.io/badge/compatible_with-GraalVM-green)
+
 # AWS Client Component
 
 AWS Client Integrant component
