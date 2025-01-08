@@ -12,6 +12,8 @@ project:
   [com.cognitect.aws/endpoints "1.1.12.772"]
 ```
 
+If your product also use `pedestal` you should use the `0.5.7` version.
+
 ## License
 
 Copyright © 2024 Bruno do Nascimento Maciel

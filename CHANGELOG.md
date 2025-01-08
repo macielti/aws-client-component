@@ -5,7 +5,7 @@ of [keepachangelog.com](http://keepachangelog.com/).
 
 ## Unreleased
 
-## 1.1.0 - 2025-01-05
+## 1.1.0 - 2025-01-07
 
 ### Added
 
