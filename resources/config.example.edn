@@ -1,0 +1,7 @@
+{:test {:service-name    "integration-tests"
+        :service         {:host "0.0.0.0"
+                          :port 8080}
+        :queues          {"message_handler_test" {:parallel-consumers 1}}
+        :aws-credentials {:access-key "random-access-key"
+                          :secret-key "random-secret-key"
+                          :region     "sa-east-1"}}}

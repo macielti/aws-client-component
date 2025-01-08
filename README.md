@@ -2,6 +2,16 @@
 
 AWS Client Integrant component
 
+## Warnings
+
+You should declare both `com.cognitect.aws/api` and `com.cognitect.aws/endpoints` as direct dependencies for your
+project:
+
+```clojure 
+  [com.cognitect.aws/api "0.8.692"]
+  [com.cognitect.aws/endpoints "1.1.12.772"]
+```
+
 ## License
 
 Copyright © 2024 Bruno do Nascimento Maciel

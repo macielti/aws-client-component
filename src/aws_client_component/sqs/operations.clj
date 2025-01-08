@@ -57,7 +57,6 @@
 
 (defmethod send-message! :test
   [{:keys [queue payload]}
-   _config
    {:keys [produced-messages]}]
   (let [payload' (assoc payload :meta {:correlation-id (-> (common-traceability/current-correlation-id)
                                                            common-traceability/correlation-id-appended)})]
